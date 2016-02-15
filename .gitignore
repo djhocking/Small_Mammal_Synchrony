@@ -1,0 +1,41 @@
+# R Project and special folders
+.Rproj.user
+.DS_Store
+.Rhistory
+.RData
+
+# File Types
+*.RData
+*.csv
+*.xls
+*.xlsx
+*.txt
+*.doc
+*.docx
+*.pdf
+
+# Folders
+Writing/
+R_scripts/
+heplots/
+Presentations/
+Data/
+Data_old/
+Output/
+Snap/
+
+# Specific Files (early trials that should have been branches)
+Original_Analysis.R
+Poisson_100_gam1.R
+Process_Data.R
+ZIP_100_gam1.R
+ZIP_100.R
+Nmix_p.R
+Poisson_100_Ryear.R
+Poisson_100_fixedGamma.R
+ZIPod_100.R
+Disturb-DailMadsen-unmarked.R
+Rscript_multinomial.R
+Rscript_multinomial_exercise.R
+
+
