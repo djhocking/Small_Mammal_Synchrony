@@ -1,4 +1,10 @@
-
+######################################################
+# Small Mammal Abundance
+# White Mountain National Forest
+# Daniel J. Hocking
+# with Ryan Stephens, Becca Rowe, Mariko Yamasaki
+# 2013
+######################################################
 
 source('Code/Poisson_100.R')
 
@@ -30,46 +36,6 @@ abund.SOHO <- abund(model = dm100p.SOHO, output = "Output/N_SOHO.csv", sep = ","
 abund.SOPA <- abund(model = dm100p.SOPA, output = "Output/N_SOPA.csv", sep = ",")
 abund.SYCO <- abund(model = dm100p.SYCO, output = "Output/N_SYCO.csv", sep = ",")
 abund.BLBR <- abund(model = dm100p.BLBR, output = "Output/N_BLBR.csv", sep = ",")
-
-
-############# 500m ##############
-
-dm500p.NAIN <- dm500p(NAIN, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/NAIN_P_Diagnostic_500p.pdf", outfile2 = "Output/NAIN_Table_500p.csv") # 
-dm500p.MIPI <- dm500p(MIPI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/MIPI_P_Diagnostic_500p.pdf", outfile2 = "Output/MIPI_Table_500p.csv") # 
-dm500p.MYGA <- dm500p(MYGA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/MYGA_P_Diagnostic_500p.pdf", outfile2 = "Output/MYGA_Table_500p.csv") # 
-dm500p.PELE <- dm500p(PELE, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/PELE_P_Diagnostic_500p.pdf", outfile2 = "Output/PELE_Table_500p.csv") # 
-dm500p.PEMA <- dm500p(PEMA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/PEMA_P_Diagnostic_500p.pdf", outfile2 = "Output/PEMA_Table_500p.csv") # 
-dm500p.SOCI <- dm500p(SOCI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SOCI_P_Diagnostic_500p.pdf", outfile2 = "Output/SOCI_Table_500p.csv") #
-dm500p.SODI <- dm500p(SODI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SODI_P_Diagnostic_500p.pdf", outfile2 = "Output/SODI_Table_500p.csv") #
-dm500p.ZAHU <- dm500p(ZAHU, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/ZAHU_P_Diagnostic_500p.pdf", outfile2 = "Output/ZAHU_Table_500p.csv") #
-dm500p.SOFU <- dm500p(SOFU, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SOFU_P_Diagnostic_500p.pdf", outfile2 = "Output/SOFU_Table_500p.csv") #
-dm500p.SOHO <- dm500p(SOHO, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SOHO_P_Diagnostic_500p.pdf", outfile2 = "Output/SOHO_Table_500p.csv") # 
-dm500p.SOPA <- dm500p(SOPA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SOPA_P_Diagnostic_500p.pdf", outfile2 = "Output/SOPA_Table_500p.csv") # 
-dm500p.SYCO <- dm500p(SYCO, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/SYCO_P_Diagnostic_500p.pdf", outfile2 = "Output/SYCO_Table_500p.csv") #
-dm500p.BLBR <- dm500p(BLBR, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/BLBR_P_Diagnostic_500p.pdf", outfile2 = "Output/BLBR_Table_500p.csv") #
-
-
-save("done", file = "C:/Users/Admin_7600/Dropbox/WMNF_Datamammals-100-500-done.csv")
-
-############# Local ##############
-source('Code/Poisson_local.R')
-
-dmp.NAIN <- dmp(NAIN, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/NAIN_P_Diagnostic_p.pdf", outfile2 = "Output/Local/NAIN_Table_p.csv") # 
-dmp.MIPI <- dmp(MIPI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/MIPI_P_Diagnostic_p.pdf", outfile2 = "Output/Local/MIPI_Table_p.csv") # 
-dmp.MYGA <- dmp(MYGA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/MYGA_P_Diagnostic_p.pdf", outfile2 = "Output/Local/MYGA_Table_p.csv") # 
-dmp.PELE <- dmp(PELE, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/PELE_P_Diagnostic_p.pdf", outfile2 = "Output/Local/PELE_Table_p.csv") # 
-dmp.PEMA <- dmp(PEMA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/PEMA_P_Diagnostic_p.pdf", outfile2 = "Output/Local/PEMA_Table_p.csv") # 
-dmp.SOCI <- dmp(SOCI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SOCI_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SOCI_Table_p.csv") #
-dmp.SODI <- dmp(SODI, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SODI_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SODI_Table_p.csv") #
-dmp.ZAHU <- dmp(ZAHU, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/ZAHU_P_Diagnostic_p.pdf", outfile2 = "Output/Local/ZAHU_Table_p.csv") #
-dmp.SOFU <- dmp(SOFU, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SOFU_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SOFU_Table_p.csv") #
-dmp.SOHO <- dmp(SOHO, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SOHO_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SOHO_Table_p.csv") # 
-dmp.SOPA <- dmp(SOPA, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SOPA_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SOPA_Table_p.csv") # 
-dmp.SYCO <- dmp(SYCO, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/SYCO_P_Diagnostic_p.pdf", outfile2 = "Output/Local/SYCO_Table_p.csv") #
-dmp.BLBR <- dmp(BLBR, n.burn = 50000, n.it = 50000, n.thin = 25, outfile = "Output/Local/BLBR_P_Diagnostic_p.pdf", outfile2 = "Output/Local/BLBR_Table_p.csv") #
-
-
-
 
 
 ##################### Extra ###############
